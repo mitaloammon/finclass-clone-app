@@ -1,22 +1,20 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import Navigation from './navigation';
+import AuthProvider from './context/Auth';
 
-const App = () => {
-  return (
-    <View style={styles.container}>
-      <Text>Hello finclass</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+const  App: React.FC = () => {
+
+return (
+  <AuthProvider>
+    <StatusBar style='light' />
+    <NavigationContainer>
+      <Navigation/>
+    </NavigationContainer>
+  </AuthProvider>
+)
+
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
-
-export default App;
+export default  App;
