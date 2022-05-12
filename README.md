@@ -1,6 +1,6 @@
 # Finclass-Clone-App
 
-## <i>⁝ Clone Finclass with React-Native ⁝</i>
+## ⁝ Clone Finclass with React-Native ⁝
 
 <br>
 
